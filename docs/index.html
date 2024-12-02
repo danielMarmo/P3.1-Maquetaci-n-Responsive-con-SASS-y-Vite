@@ -5,41 +5,44 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/index-DxlCLwjh.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BHrl6e5U.css">
+  <script type="module" crossorigin src="/assets/index-B668pI75.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BUX4sYlj.css">
 </head>
 
 <body>
   <header>
     <div class="row justify-content-between align-items-center">
       <div>
-        <img src="/assets/logo-BusHorizon-bi7_E3wq.png" alt="" width="100%" class="">
+        <a href="index.html" class=""><img src="/assets/logo-BusHorizon-bi7_E3wq.png" alt="" width="100%" class=""></a>
       </div>
       <div>
         <nav>
-          <ul>
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+          <ul class="nav-links">
             <li><a href="#" class="">BONOS</a></li>
             <li><a href="#" class="">VIAJES</a></li>
             <li><a href="#" class="">TARIFAS</a></li>
-            <li><a href="#" class="">INFORMACÓN</a></li>
-            <li class="btn"><a href="#" class="">REGISTRARSE</a></li>
+            <li><a href="#" class="">INFORMACIÓN</a></li>
+            <li class="btn"><a href="registro.html" class="">REGISTRARSE</a></li>
           </ul>
         </nav>
+
       </div>
     </div>
   </header>
 
   <main>
-    <div class="row justify-content-between">
+    <div class="hero row justify-content-between">
       <div>
         <h3>Nuestra aplicación BusHorizon disponible en dispositivos Android e IOS</h3>
         <button class="btn">DESCARGAR AHORA</button>
       </div>
     </div>
 
-    <div class="row justify-content-between">
-      <div class="col-3 justify-content-between shadow relative">
+    <div class="row-grid">
+      <div class="col">
         <div>
           <h1>¡NUEVOS BONOS!</h1>
           <p>En cientos de trayectos con hasta</p>
@@ -48,15 +51,65 @@
         <div>
           <p>Novedades Bonos</p>
           <p>Bonos gratuitos para viajar por toda España</p>
-          <button class="btn absolute">MAS INFO</button>
+          <button class="btn">MAS INFO</button>
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h1>DESCUENTOS</h1>
+          <p class="text-second-card">En tus viajes dentro de tu comunidad autónoma</p>
+        </div>
+        <div>
+          <p>Descuentos y promociones</p>
+          <p>Consulta nuestros descuentos y promociones en viajes </p>
+          <button class="btn">MAS INFO</button>
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h1>ACCEDE A TU CUENTA</h1>
+          <p><i class="fa fa-user-o user-icon" aria-hidden="true"></i></p>
+        </div>
+        <div>
+          <p>Accede a tu cuenta</p>
+          <p>Consulta tus bonos y tickets desde tu cuenta</p>
+          <button class="btn">MAS INFO</button>
         </div>
       </div>
     </div>
   </main>
 
-  <footer>
+  <footer class="row">
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#" class="">© 2024 BusHorizon. Todos los derechos reservados.</a></li>
+          <li><a href="#" class="">Política de Privacidad y Cookies</a></li>
+          <li><a href="#" class="">Términos y Condiciones</a></li>
+          <li><a href="#" class="">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <nav class="nav-socials">
+        <ul>
+          <li><a href="#" class=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#" class=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="#" class=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
-  </footer>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+  </script>
+
+
 </body>
 
 </html>

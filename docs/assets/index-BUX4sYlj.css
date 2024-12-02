@@ -1,0 +1,524 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: Lato, sans-serif
+}
+
+.justify-content-between {
+    justify-content: space-between
+}
+
+.justify-content-center {
+    justify-content: center
+}
+
+.align-items-center {
+    align-items: center
+}
+
+.row {
+    display: flex
+}
+
+main {
+    padding: 0;
+    margin: 0
+}
+
+main .hero {
+    background-image: url(/assets/banner-qZDdiJLG.png);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+@media (max-width: 600px) {
+    main .hero {
+        background-size: auto;
+        height: 50vh
+    }
+}
+
+main .hero div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47%;
+    color: #fff;
+    background-image: none
+}
+
+main .hero div h3 {
+    width: 50%
+}
+
+@media (max-width: 600px) {
+    main .hero div h3 {
+        width: 100%
+    }
+}
+
+main .hero div button {
+    background-color: #12acea;
+    font-size: .9375rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border: 2px solid #12acea;
+    color: #fff
+}
+
+@media (max-width: 600px) {
+    main .hero div {
+        padding-top: 5rem;
+        width: 60%
+    }
+}
+
+main .row-grid {
+    background-color: #0b676c;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding-inline: 5%;
+    padding-block: 3%
+}
+
+main .row-grid .col {
+    background-color: #12acea;
+    border-radius: 10px
+}
+
+main .row-grid .col>div:first-child {
+    height: 40vh;
+    text-align: center
+}
+
+main .row-grid .col>div:first-child h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Berlin Sans FB, sans-serif
+}
+
+@media (max-width: 600px) {
+    main .row-grid .col>div:first-child h1 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        font-family: Berlin Sans FB, sans-serif
+    }
+}
+
+main .row-grid .col>div:first-child .text-second-card {
+    font-size: 1.875rem;
+    font-weight: Regular;
+    font-family: Berlin Sans FB, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 40%;
+    width: 60%
+}
+
+@media (max-width: 600px) {
+    main .row-grid .col>div:first-child .text-second-card {
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-family: Berlin Sans FB, sans-serif
+    }
+}
+
+main .row-grid .col>div:first-child .user-icon {
+    font-size: 100px
+}
+
+@media (max-width: 600px) {
+    main .row-grid .col>div:first-child {
+        height: 20vh
+    }
+}
+
+main .row-grid .col>div:last-child {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    background-color: #25303f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+main .row-grid .col>div:last-child>p:first-child {
+    font-size: .9375rem;
+    font-weight: Semibold;
+    font-family: Lato, sans-serif
+}
+
+main .row-grid .col>div:last-child p {
+    font-size: .75rem;
+    font-weight: Regular;
+    font-size: "Lato", sans-serif;
+    padding-inline-start: 20px
+}
+
+@media (max-width: 600px) {
+    main .row-grid .col>div:last-child p {
+        width: 50%
+    }
+}
+
+main .row-grid .col>div:last-child .btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    background-color: #25303f;
+    font-size: .9375rem;
+    text-align: center;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border: 2px solid #12acea;
+    text-decoration: none;
+    color: #12acea
+}
+
+@media (max-width: 600px) {
+    main .row-grid .col>div:last-child {
+        height: 5vh
+    }
+}
+
+@media (max-width: 600px) {
+    main .row-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 8rem
+    }
+}
+
+main .registro {
+    padding-block: 2rem;
+    background-color: #0b676c
+}
+
+main .registro .container {
+    margin: 0 auto;
+    width: 40%;
+    background-color: #25303f;
+    border-radius: 20px
+}
+
+@media (max-width: 600px) {
+    main .registro .container {
+        width: 90%
+    }
+}
+
+main .registro .container .form {
+    width: 60%;
+    margin: 0 auto
+}
+
+@media (max-width: 600px) {
+    main .registro .container .form {
+        width: 90%
+    }
+}
+
+main .registro .container .form .cerrar {
+    padding-top: 10px;
+    font-size: 20px;
+    border: 0;
+    background-color: #25303f;
+    color: #0b676c;
+    text-align: end
+}
+
+main .registro .container .form h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: Berlin Sans FB, sans-serif
+}
+
+main .registro .container .form form {
+    display: flex;
+    flex-direction: column
+}
+
+main .registro .container .form form>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+main .registro .container .form form>div input {
+    padding: 5px;
+    background-color: #25303f;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+main .registro .container .form form .form-btn {
+    justify-content: center
+}
+
+main .registro .container .form form .form-btn .btn {
+    width: 60%;
+    margin: 10px;
+    background-color: #25303f;
+    font-size: .9375rem;
+    text-align: center;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border: 2px solid #12acea;
+    text-decoration: none;
+    color: #12acea
+}
+
+header {
+    height: 30vh;
+    width: 100%;
+    background-color: #25303f
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 20vh
+    }
+}
+
+header div {
+    display: flex
+}
+
+header div img {
+    width: 100%
+}
+
+@media (max-width: 600px) {
+    header div {
+        width: 80%
+    }
+}
+
+header div div {
+    padding-inline: 5%
+}
+
+header div div nav {
+    width: 100%
+}
+
+header div div nav .menu-toggle {
+    display: none
+}
+
+@media (max-width: 600px) {
+    header div div nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 5rem;
+        color: #12acea
+    }
+}
+
+header div div nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none
+}
+
+@media (max-width: 600px) {
+    header div div nav .nav-links {
+        border-radius: 20px;
+        z-index: 5;
+        position: absolute;
+        display: none;
+        flex-direction: column
+    }
+}
+
+header div div nav .nav-links.active {
+    display: flex
+}
+
+header div div nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0
+}
+
+@media (max-width: 600px) {
+    header div div nav ul {
+        border-radius: 20px;
+        background-color: #25303f
+    }
+
+    header div div nav ul>li:last-child {
+        border: 0;
+        border-end-end-radius: 20px;
+        border-end-start-radius: 20px
+    }
+}
+
+header div div nav ul li {
+    background-color: #12acea;
+    font-size: .9375rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border: 2px solid #12acea
+}
+
+@media (max-width: 600px) {
+    header div div nav ul li {
+        background-color: #25303f;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 2px solid white;
+        width: 60%
+    }
+}
+
+header div div nav ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+header div div nav ul li:last-child {
+    background-color: #25303f
+}
+
+header div div nav ul li:last-child a {
+    text-decoration: none;
+    color: #12acea
+}
+
+header div:nth-child(2) {
+    flex: 1
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    padding-block: 1rem;
+    width: 100%;
+    background-color: #25303f;
+    font-size: .75rem;
+    font-weight: Regular;
+    font-size: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start
+    }
+}
+
+footer>div:first-child {
+    flex: 4
+}
+
+@media (max-width: 600px) {
+    footer>div:first-child {
+        flex: none;
+        width: 100%
+    }
+}
+
+footer>div:first-child nav {
+    width: 100%
+}
+
+footer>div:first-child nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 5rem
+}
+
+@media (max-width: 600px) {
+    footer>div:first-child nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center
+    }
+}
+
+footer>div:first-child nav ul li {
+    text-align: center;
+    margin: 0;
+    padding-right: 5rem
+}
+
+@media (max-width: 600px) {
+    footer>div:first-child nav ul li {
+        padding-block: 5px
+    }
+}
+
+footer>div:first-child nav ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+footer>div:last-child {
+    flex: 1
+}
+
+@media (max-width: 600px) {
+    footer>div:last-child {
+        flex: none;
+        width: 100%
+    }
+}
+
+footer>div:last-child nav {
+    width: 100%
+}
+
+@media (max-width: 600px) {
+    footer>div:last-child nav {
+        margin: 0 auto;
+        width: 50%
+    }
+}
+
+footer>div:last-child nav ul {
+    list-style: none;
+    display: flex;
+    padding-inline: 2rem;
+    justify-content: space-between
+}
+
+footer>div:last-child nav ul li {
+    text-align: center;
+    margin: 0
+}
+
+footer>div:last-child nav ul li a {
+    color: #23d4ba;
+    font-size: 40px;
+    text-decoration: none
+}
