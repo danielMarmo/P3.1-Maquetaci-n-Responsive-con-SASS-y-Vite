@@ -269,6 +269,10 @@ main {
                             border: 2px solid $primary-primary;
                             text-decoration: none;
                             color: $primary-primary;
+
+                            @include respond-to("small") {
+                                padding-inline: 20px;
+                            }
                         }
                     }
                 }
