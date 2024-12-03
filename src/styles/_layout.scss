@@ -69,11 +69,15 @@ main {
                 padding-inline: 30px;
                 border: 2px solid $primary-primary;
                 color: white;
+
+                @include respond-to("small") {
+                    padding-inline: 20px;
+                }
             }
 
             @include respond-to("small") {
-                padding-top: 5rem;
-                width: 60%;
+                padding-top: 2rem;
+                width: 70%;
             }
         }
     }
@@ -155,7 +159,10 @@ main {
                     padding-inline-start: 20px;
 
                     @include respond-to("small") {
-                        width: 50%;
+                        padding-inline-start: 10px;
+                        width: 55%;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
                     }
 
                 }
@@ -174,6 +181,10 @@ main {
                     border: 2px solid $primary-primary;
                     text-decoration: none;
                     color: $primary-primary;
+
+                    @include respond-to("small") {
+                        padding-inline: 20px;
+                    }
                 }
 
                 @include respond-to("small") {
