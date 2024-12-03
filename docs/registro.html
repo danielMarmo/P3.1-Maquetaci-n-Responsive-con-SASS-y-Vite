@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vite App</title>
+  <script type="module" crossorigin src="./assets/main-DlPq1d-q.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-GBOiWRJz.css">
+</head>
+
+<body>
+    <header>
+        <div class="row justify-content-between align-items-center">
+            <div>
+                <a href="index.html" class=""><img src="./assets/logo-BusHorizon-bi7_E3wq.png" alt="" width="100%" class=""></a>
+            </div>
+            <div>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                    <ul class="nav-links">
+                        <li><a href="#" class="">BONOS</a></li>
+                        <li><a href="#" class="">VIAJES</a></li>
+                        <li><a href="#" class="">TARIFAS</a></li>
+                        <li><a href="#" class="">INFORMACIÓN</a></li>
+                        <li class="btn"><a href="registro.html" class="">REGISTRARSE</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="registro">
+            <div class="container">
+                <div class="form">
+                    <div class="cerrar">
+                        <button class="cerrar" onclick="cerrarVentana()">X</button>
+                    </div>
+                    <h2>Registro en BusHorizon</h2>
+                    <form>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Default" required>
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Default" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Default" required>
+                        </div>
+                        <div>
+                            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        </div>
+                        <div>
+                            <label for="direccion">Dirección</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Default" required>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="terminos" required>
+                                Acepto los Términos y Políticas de Privacidad
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="promociones">
+                                Acepto que me envíen promociones y descuentos a mi email
+                            </label>
+                        </div>
+
+                        <div class="form-btn">
+                            <button type="submit" class="btn">CREAR CUENTA</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="row">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="">© 2024 BusHorizon. Todos los derechos reservados.</a></li>
+                    <li><a href="#" class="">Política de Privacidad y Cookies</a></li>
+                    <li><a href="#" class="">Términos y Condiciones</a></li>
+                    <li><a href="#" class="">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="nav-socials">
+                <ul>
+                    <li><a href="#" class=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
